@@ -1,6 +1,6 @@
 {
   "name": "@ryuuto829/eslint-config-with-prettier",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Dmytro Rykhlyk's default eslint configuration with prettier",
   "main": "index.js",
   "repository": {
