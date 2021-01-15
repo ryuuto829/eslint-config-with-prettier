@@ -1,4 +1,5 @@
-# http://EditorConfig.org
+# This file is for unifying the coding style for different editors and IDEs
+# Read more: http://editorConfig.org
 
 # Top-most EditorConfig file
 root = true

@@ -2,9 +2,9 @@
 
 These are my default ESLint and Prettier settings ⚡️
 
-Based on [`Upstatement`](https://github.com/Upstatement)'s  [`ESLint`](https://eslint.org/) and [`prettier`](https://prettier.io) configurations.
+Based on [`Upstatement`](https://github.com/Upstatement)'s [`ESLint`](https://eslint.org/) and [`prettier`](https://prettier.io) configurations.
 
-Check their documentation on  [`Prettier configuration`](https://www.npmjs.com/package/@upstatement/prettier-config) and  [`ESLint configuration`](https://www.npmjs.com/package/@upstatement/eslint-config).
+Check their documentation on [`Prettier configuration`](https://www.npmjs.com/package/@upstatement/prettier-config) and [`ESLint configuration`](https://www.npmjs.com/package/@upstatement/eslint-config).
 
 ## Installation
 
@@ -17,11 +17,11 @@ npx install-peerdeps --dev @ryuuto829/eslint-config-with-prettier
 
 # OR using npm
 
-npm install --save-dev @ryuuto829/eslint-config-with-prettier eslint babel-eslint prettier eslint-config-prettier
+npm install --save-dev @ryuuto829/eslint-config-with-prettier eslint babel-eslint prettier eslint-config-prettier eslint-plugin-prettier
 
 # OR using yarn
 
-yarn add --dev @ryuuto829/eslint-config-with-prettier eslint babel-eslint prettier eslint-config-prettier
+yarn add --dev @ryuuto829/eslint-config-with-prettier eslint babel-eslint prettier eslint-config-prettier eslint-plugin-prettier
 ```
 
 2. Create an `.eslintrc` file at the root of your project with the following:
@@ -41,7 +41,8 @@ module.exports = require('@ryuuto829/eslint-config-with-prettier/prettier');
 4. (Optional) Add `.editorconfig` file to the root of the project:
 
 ```pl
-# http://EditorConfig.org
+# This file is for unifying the coding style for different editors and IDEs
+# Read more: http://editorConfig.org
 
 # Top-most EditorConfig file
 root = true
@@ -67,7 +68,7 @@ insert_final_newline = true
 
 ## Using with React
 
-1. Install additional  dependencies:
+1. Install additional dependencies:
 
 ```sh
 # If project includes deafult config
@@ -91,7 +92,7 @@ yarn add --dev @ryuuto829/eslint-config-with-prettier eslint babel-eslint pretti
 
 You can use [`lint-staged`](https://github.com/okonet/lint-staged) with [`husky`](https://github.com/typicode/husky), which manages git hooks and automatically fix your errors on commit.
 
-1. Install
+1. Install following dependencies:
 
 ```sh
 `yarn add --dev lint-staged husky`
@@ -120,11 +121,11 @@ You can use [`lint-staged`](https://github.com/okonet/lint-staged) with [`husky`
 1. Install Prettier extension: `View → Extensions` then find and install Prettier - Code formatter.
 2. Install the ESLint extension: `View → Extensions` then find and install ESLint.
 3. Reload the editor.
-3. In your user settings:
+4. In your user settings:
 
 ```js
 // Format on save with Prettier rules
 "editor.formatOnSave": true,
 // Tell the ESLint plugin to run on save
-"eslint.autoFixOnSave": true,
+"editor.codeActionsOnSave": { "source.fixAll.eslint": true }
 ```

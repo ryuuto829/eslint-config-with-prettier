@@ -5,12 +5,14 @@ module.exports = {
   ],
   "parser": "babel-eslint",
   "parserOptions": {
-    "ecmaVersion": 2018,
+    "ecmaVersion": 2021,
   },
   "env": {
     "es6": true,
   },
+  "plugins": ["prettier"],
   "rules": {
+    "prettier/prettier": "error",
     "no-console": ["error", { "allow": ["warn", "error"] }],
 
     // Best Practices
