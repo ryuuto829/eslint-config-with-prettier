@@ -95,7 +95,7 @@ You can use [`lint-staged`](https://github.com/okonet/lint-staged) with [`husky`
 1. Install following dependencies:
 
 ```sh
-`yarn add --dev lint-staged husky`
+yarn add --dev lint-staged husky
 ```
 
 2. Update your `package.json` like this:
@@ -114,6 +114,18 @@ You can use [`lint-staged`](https://github.com/okonet/lint-staged) with [`husky`
       "eslint --fix"
     ]
   }
+```
+
+## Specifying Environments
+
+```json
+{
+  "extends": ["@ryuuto829/eslint-config-with-prettier"],
+  "env": {
+    "browser": true,
+    "node": true
+  }
+}
 ```
 
 ## Integration with Visual Studio Code
