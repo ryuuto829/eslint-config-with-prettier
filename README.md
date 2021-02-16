@@ -2,9 +2,8 @@
 
 These are my default ESLint and Prettier settings ⚡️
 
-Based on [`Upstatement`](https://github.com/Upstatement)'s [`ESLint`](https://eslint.org/) and [`prettier`](https://prettier.io) configurations.
-
-Check their documentation on [`Prettier configuration`](https://www.npmjs.com/package/@upstatement/prettier-config) and [`ESLint configuration`](https://www.npmjs.com/package/@upstatement/eslint-config).
+> Based on [`Upstatement`](https://github.com/Upstatement)'s [`ESLint`](https://eslint.org/) and [`prettier`](https://prettier.io) configurations.
+> Check their documentation on [`Prettier configuration`](https://www.npmjs.com/package/@upstatement/prettier-config) and [`ESLint configuration`](https://www.npmjs.com/package/@upstatement/eslint-config).
 
 ## Installation
 
@@ -123,7 +122,8 @@ yarn add --dev lint-staged husky
   "extends": ["@ryuuto829/eslint-config-with-prettier"],
   "env": {
     "browser": true,
-    "node": true
+    "node": true,
+    "jest": true
   }
 }
 ```

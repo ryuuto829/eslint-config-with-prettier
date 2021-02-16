@@ -11,12 +11,11 @@
     "eslint",
     "prettier",
     "config",
-    "eslintconfig",
-    "dmytro rykhlyk"
+    "eslintconfig"
   ],
   "author": {
     "name": "Dmytro Rykhlyk",
-    "email": "rykhlyk.info@gmail.com"
+    "email": "dmytro.rykhlyk@gmail.com"
   },
   "license": "ISC",
   "bugs": {
